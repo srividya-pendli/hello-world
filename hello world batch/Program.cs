@@ -11,7 +11,7 @@ namespace hello_world_batch
         static void Main(string[] args)
         {
             Console.WriteLine("WELCOME TO FIRST CLASS OF RFP");
-            Console.WriteLine("1:Human\n2:SwapNumbers");
+            Console.WriteLine("1:Human\n2:SwapNumbers\n3:reverse");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -22,6 +22,11 @@ namespace hello_world_batch
                 case 2:
                     SwapNumbers swapNumbers = new SwapNumbers();
                     swapNumbers.SwapTwoNumbers();
+                    break;
+                case 3:
+                    Console.WriteLine("Enter a number to reverse");
+                    int number = Convert.ToInt32(Console.ReadLine());
+                    Reverse.FindReverse(number);
                     break;
             }
               Console.ReadLine();
