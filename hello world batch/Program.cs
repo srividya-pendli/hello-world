@@ -11,7 +11,7 @@ namespace hello_world_batch
         static void Main(string[] args)
         {
             Console.WriteLine("WELCOME TO FIRST CLASS OF RFP");
-            Console.WriteLine("1:Human\n2:SwapNumbers\n3:reverse or Palindrome\n4:UserReplace");
+            Console.WriteLine("1:Human\n2:SwapNumbers\n3:reverse or Palindrome\n4:UserReplace\n5:Flipcoin");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -30,6 +30,12 @@ namespace hello_world_batch
                     break;
                 case 4:
                     UserReplace.ReplaceUserName();
+                    break;
+                case 5:
+                    Flipcoin.FindFlipCoinCount();
+                    break;
+                default:
+                    Console.WriteLine("please select a number between 1 to 5");
                     break;
             }
               Console.ReadLine();
